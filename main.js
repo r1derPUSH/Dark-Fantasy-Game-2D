@@ -10,7 +10,7 @@
 
 window.onload = function playAudio () {
  audio = new Audio('darkMusic.mp3');
-    audio.volume = 0.2;
+    audio.volume = 0.25;
     audio.loop = true;
     audio.play();
 }
