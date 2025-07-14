@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Fantasy Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link style='border-radius: 50%;'rel="icon" type="image/png" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="emptyBox">
+    <svg class="svgHome" onclick="homeButton()" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M28.781 104.122h70.438a2.111 2.111 0 0 0 2.111-2.111V52.188a2.11 2.11 0 0 0-.851-1.694L65.26 24.3a2.109 2.109 0 0 0-2.519 0L27.522 50.5a2.11 2.11 0 0 0-.851 1.694v49.822a2.111 2.111 0 0 0 2.11 2.106zM72.195 99.9H55.8V75.344h16.395zm-41.3-46.651L64 28.62l33.108 24.629V99.9H76.417V73.233a2.111 2.111 0 0 0-2.111-2.111H53.69a2.111 2.111 0 0 0-2.111 2.111V99.9H30.892z"/></svg>    </div>
+    <div class="chooseCharText"><h1 class="animatedTypeWriter">Choose Your Character ⚔</h1></div>
+    <div class="readyText"></div>
+    <div class="buttonReady"><button id ='startButton'onclick="startGame()">Fight!</button></div>
+    <div class="timer321"><h1 class="timerSetTimeout"></h1></div>
+    <div class="battleField">
+        <div class="characterFunctional">
+            <div class="rowSection"> 
+                <div class="characterHP">HP</div>
+                <div class="enemyHP"><div class="enemyHPInside">HP</div></div>
+                <div class="svgEnterContainer">
+                    <div class="divFlex">
+                        <div class="svgEnterContainer"><img src="img/logical.jfif" alt="" class="svgEnter"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="reloadText">Reload: 0s</div>
+            <div class="result"></div>
+            
+            <div><img src="" alt="" class="charImg">
+            <div id="skill"></div></div>
+            <div class="coin"><img class="coinImg" src="img/coinma.png" alt="" style="width: 100px; height: 100px;"></div>
+            <div class="enemy">
+                <img src="img/enemy.png" alt="enemy" class="enemyImg" id="enemyID">
+            </div>
+        </div>
+    </div>
+    <div class="chooseCharacter">
+        <div class="container_magician">
+            <img src="img/magician.jpg" alt="Magician">
+            <button id='magicianButton'onclick="magicianCharacter()">Magician</button>
+        </div>
+        <div class="container_knight">
+            <img src="img/knight.jpg" alt="Knight">
+            <button id='knightButton'onclick="knightCharacter()">Knight</button>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
